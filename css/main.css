@@ -1,0 +1,729 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url('../fonts/open-sans-v28-latin-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-v28-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+    url('../fonts/open-sans-v28-latin-700.woff2') format('woff2'),
+    url('../fonts/open-sans-v28-latin-700.woff') format('woff'); 
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0); 
+}
+
+.container {
+    width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(255,255,255);
+}
+
+.intro-box {
+    display: flex;
+    align-items: center;
+}
+
+.intro-box-link:hover {
+    opacity: 0.8;
+}
+
+.intro-box-link:active {
+    opacity: 0.4;
+}
+
+.intro-box-nav-list {
+    display:flex;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+}
+
+.intro-box-nav-list-item:nth-child(6) {
+    margin-right: 7px;
+}
+
+.intro-box-nav-list-item {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 17px;
+    border-bottom: 3px solid #0000;
+    transition: 0.2s;
+}
+
+.intro-box-nav-list-item:hover {
+    border-bottom: 3px solid #000;
+}
+
+.intro-box-nav-list-item:nth-child(7):hover {
+    margin-right: 0;
+    border: none;
+}
+
+.intro-box-nav-list-item:active {
+    background: rgba(25, 25, 25, 0.7);
+}
+
+.intro-box-nav-list-item-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    border: 3px solid #00BAFC;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    background: #00BAFC;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.tel:hover {
+    border: 3px solid #00BAFC;
+    background-color: #fff;
+    color: #00BAFC;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.tel:active {
+    border: 3px solid #00bafc99;
+    background: #00bafc99;
+    color: #FFFFFF;
+}
+
+
+/* hover list */
+
+.intro-box-nav-list-item:nth-child(2) {
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 17px;
+    border-bottom: 3px solid #0000;
+    transition: 0.3s;
+}
+
+.intro-box-nav-list-item:nth-child(2):hover {
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 17px;
+    border-bottom: 3px solid #000;
+    transition: 0.2s;
+}
+
+.intro-box-nav-list-item:nth-child(2):hover .hover-list {
+    display: block;
+}
+ 
+.hover-item:hover {
+    background-color: #00BAFC;
+    color: #fff;
+}
+
+.hover-item:active {
+    background: #00BAFC;
+    opacity: 0.6;
+}
+
+.hover-list {
+    position: absolute;
+    top: 106%;
+    right: 0%;
+    left: -14%;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 124px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.hover-item {
+    padding: 17px 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* main qismi*/
+
+.holder {
+    margin-bottom: 58px;
+    padding-top: 56px;
+} 
+
+.holder-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+
+.holder-box-left {
+    width: 470px;
+}
+
+.holder-box-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    margin: 0 0 16px 0;
+}
+
+.holder-box-text {
+    margin: 0 0 16px 0;
+}
+
+.holder-box-left-btn {
+    border: 3px solid #00BAFC;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    background: #00BAFC;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.holder-box-left-btn:hover {
+    border: 3px solid #00bafccc;
+    background: #00bafccc;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.holder-box-left-btn:active {
+    border: 3px solid #00bafc99;
+    background: #00bafc99;
+    color: #FFFFFF;
+}
+
+.iframe-box {
+    border-radius: 10px;
+    border: none;
+}
+
+/* holder qismi tugadi */
+
+.inner {
+    padding: 0px 0 64px 0;
+}
+
+.inner-box-top {
+    text-align: center;
+    width: 719px;
+    margin: 0 auto;
+}
+
+.inner-box-top-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+
+.inner-box-top-text {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 0 24px 0;
+}
+
+.inner-box-center-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.inner-box-center-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 24px 58px;
+    margin-right: 46px;
+    margin-bottom: 48px;
+}
+
+.inner-box-center-list-item:hover {
+    box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.inner-box-center-list-item:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inner-box-center-list-item:nth-child(3) {
+    margin: 0 0 48px 0;
+}
+
+.inner-box-center-list-item:nth-child(4) {
+    margin: 0 46px 0 0;
+}
+
+.inner-box-center-list-item:nth-child(5) {
+    margin: 0;
+}
+
+.inner-box-center-list-item-link {
+    text-decoration: none;
+    color:#000;
+}
+
+.inner-box-center-list-item-img {
+    margin: 0 0 16px 0;
+}
+
+.inner-box-center-list-item-info {
+    text-align: center;
+}
+
+.inner-box-center-list-item-info-title {
+    margin: 0 0 16px 0;
+}
+
+.inner-box-center-list-item-info-text {
+    margin: 0;
+}
+
+.inner-box-bottom {
+    text-align: center;
+}
+
+.inner-box-bottom-btn {
+    border: 3px solid #00BAFC;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    background: #00BAFC;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-right: 16px;
+}
+
+.inner-box-bottom-btn:hover {
+    border: 3px solid #00bafccc;
+    background: #00bafccc;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inner-box-bottom-btn:active {
+    border: 3px solid #00bafc99;
+    background: #00bafc99;
+    color: #FFFFFF;
+}
+
+.inner-box-bottom-links {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #00BAFC;
+}
+
+/* inner qismi tugadi */
+
+.contents {
+    padding-bottom: 55px;
+}
+
+.content-box-top {
+    text-align: center;
+    margin: 0 auto 24px auto;
+    width: 719px;
+}
+
+.content-box-top-title {
+    margin: 0 0 16px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000;
+}
+
+.content-box-top-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 24px;
+    color: #000;
+}
+
+.content-box-center-list {
+    list-style: none;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+.content-box-center-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.content-box-center-list-item:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.content-box-center-list-item:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.content-box-center-img {
+    margin-right: 32px;
+}
+
+.content-box-center-list-item-right {
+    width: 493px;
+}
+
+.content-box-center-list-item-right-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.content-box-center-list-item-right-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.content-box-bottom {
+    text-align: center;
+}
+
+.content-box-bottom-btn {
+    border: 3px solid #00BAFC;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    background: #00BAFC;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.content-box-bottom-btn:hover {
+    border: 3px solid #00bafccc;
+    background: #00bafccc;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-box-bottom-btn:active {
+    border: 3px solid #00bafc99;
+    background: #00bafc99;
+    color: #FFFFFF;
+}
+
+/* content qismi tugadi */
+
+.selection {
+    padding: 56px;
+    background: #00BAFC;
+    
+}
+
+.selection-box-info {
+    text-align: center;
+    width: 719px;
+    margin: 0 auto 24px;
+}
+
+.selection-box-info-title {
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.selection-box-info-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.selection-box-form {
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 24px;
+}
+
+.selection-box-form-input {
+    display: block;
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: #F3F3F3;
+    margin-bottom: 16px;
+}
+
+.selection-box-select {
+    display: block;
+    width: 300px;
+    background-color: #F3F3F3;
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    appearance: none;
+    margin-bottom: 16px;
+    background-image: url('../images/Polygon1.svg');
+    background-repeat: no-repeat;
+    background-position: calc(270px) calc(20px);
+}
+
+.selection-box-select, .selection-box-form-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+}
+
+.selection-box-form-btn {
+    text-align: center;
+}
+
+.selection-box-form-submit {
+    border: 3px solid #00BAFC;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    background: #00BAFC;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.selection-box-form-submit:hover {
+    border: 3px solid #00bafccc;
+    background: #00bafccc;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selection-box-form-submit:active {
+    border: 3px solid #00bafc99;
+    background: #00bafc99;
+    color: #FFFFFF;
+}
+
+/* selection qismi tugadi */
+
+.hero {
+    background-color: #000;
+}
+
+.hero-box {
+    padding: 56px 0 56px 0;
+    display: flex;
+}
+
+.hero-box-first {
+    margin-right: 100px;
+    width: 320px;
+}
+
+.hero-box-first-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.hero-box-first-text {
+    margin: 0%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.hero-box-second {
+    margin-right: 100px;
+}
+
+.hero-box-second-title-link {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.hero-box-second-title {
+    margin: 0 0 16px 0;
+}
+
+.hero-box-second-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hero-box-second-list-item {
+    margin-bottom: 8px;
+}
+
+.hero-box-second-list-item:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.hero-box-second-list-item-link {
+    text-decoration: none;
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.hero-box-second-list-item-link:hover {
+    color: #00BAFC;
+    cursor: pointer;
+}
+
+.hero-box-second-list-item-link:active {
+    color: #00BAFC;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.hero-box-third-title-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+    text-decoration: none;
+}
+
+.hero-box-third-title {
+    margin: 0 0 16px 0;
+}
+
+.hero-box-third-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hero-box-third-list-item {
+    margin: 0 0 8px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.hero-box-third-list-item:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.hero-third-list-link:hover {
+    color: #00BAFC;
+    cursor: pointer;
+}
+
+.hero-third-list-link:active {
+    color: #00BAFC;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.hero-box-third-list-item-img {
+    margin-right: 8px;
+}
+
+.hero-third-list-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.link-l {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 100;
+    background: #fff;
+    border-radius: 50%;
+}
